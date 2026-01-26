@@ -1,4 +1,4 @@
-# Speech Guard
+# SpeechGuard
 
 A comprehensive speech privacy protection system that provides both acoustic and content privacy for speech data.
 
@@ -101,7 +101,7 @@ python FNR.py
 ## System Architecture
 
 ```
-Speech Guard
+SpeechGuard
 │
 ├── Acoustic Privacy
 │   ├── Input: Original speech
@@ -115,22 +115,6 @@ Speech Guard
     ├── Output: Encrypted audio + keys
     └── Evaluation: FNR analysis
 ```
-
-## Use Cases
-
-### Acoustic Privacy
-
-- **Anonymous Speech Sharing**: Share speech data without revealing speaker identity
-- **Voice Conversion Research**: Protect speaker identities in research datasets
-- **Privacy-Preserving ASR**: Train speech recognition without exposing identities
-- **Voice Assistant Privacy**: Protect user voice characteristics
-
-### Content Privacy
-
-- **Sensitive Information Protection**: Encrypt names, numbers, addresses in recordings
-- **Medical Privacy**: Protect patient information in medical recordings
-- **Legal Compliance**: Meet data protection requirements (GDPR, HIPAA)
-- **Secure Communication**: Selective encryption for multi-party conversations
 
 ## Technical Details
 
@@ -183,7 +167,7 @@ montreal-forced-aligner  # For word-level alignment (content privacy)
 ## Project Structure
 
 ```
-Speech_Guard/
+SpeechGuard/
 ├── acoustic_privacy/
 │   ├── predefined.py           # Common utilities
 │   ├── ours-protect.py         # Protection module
@@ -199,7 +183,7 @@ Speech_Guard/
 │   ├── FNR.py                     # Step 5: FNR calculation
 │   └── README.md
 │
-├── samples/                    # Example data (create as needed)
+├── samples/                    # Example data
 │   ├── 1/
 │   ├── 2/
 │   └── 3/
@@ -207,88 +191,23 @@ Speech_Guard/
 └── README.md                   # This file
 ```
 
-## Configuration
-
-Each module contains configuration variables at the top of each file. Update these according to your setup:
-
-```python
-# Example configuration (acoustic_privacy/ours-protect.py)
-input_paths = [r"samples/original"]
-output_path = r"samples/protected"
-nb_proc = 2  # Number of parallel processes
-```
-
-All paths use generic "samples/" directories by default. Update to match your data locations.
-
-## Performance
-
-### Acoustic Privacy
-- **Processing Speed**: ~0.5-2 seconds per utterance (depends on length)
-- **Parallelization**: Multi-threaded processing supported
-- **Memory**: Moderate (loads full utterances)
-
-### Content Privacy
-- **Encryption Speed**: Real-time or faster
-- **Bottleneck**: Forced alignment (external MFA step)
-- **Scalability**: Handles large datasets efficiently
-
-## Evaluation Metrics
-
-### Acoustic Privacy
-- **Speaker Verification EER**: Measures identity protection
-- **ASR WER**: Measures intelligibility preservation
-- **Distortion Strength**: Measures transformation magnitude
-
-### Content Privacy
-- **False Negative Rate (FNR)**: Measures content protection
-- **Word Error Rate (WER)**: Measures overall quality
-- **Encryption Coverage**: Percentage of sensitive words protected
-
-## Known Limitations
-
-### Acoustic Privacy
-- Requires parameter storage for recovery
-- May affect prosody slightly
-- Not effective against sophisticated speaker recognition with training data
-
-### Content Privacy
-- Requires accurate forced alignment
-- Encrypted segments may affect ASR performance
-- Key management must be handled securely in production
-
-## Security Considerations
-
-### Acoustic Privacy
-- Parameters must be kept secret for privacy
-- Transformation is deterministic (same parameters = same output)
-- Multiple transformations can be chained for stronger protection
-
-### Content Privacy
-- Keys must be distributed securely
-- Use proper key management in production (not plain text files)
-- Consider additional authentication for key access
-- Encrypted segments are identifiable by unusual acoustic properties
-
 ## Citation
 
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{yourpaper,
-  title={Speech Guard: Comprehensive Privacy Protection for Speech Data},
-  author={Your Name},
-  journal={Your Journal},
-  year={2026}
+@article{zhang2025speechguard,
+  title={SpeechGuard: Recoverable and Customizable Speech Privacy Protection},
+  author={Zhang, Jingmiao and Liu, Suyuan and Hou, Jiahui and Wang, Zhiqiang and Yu, Haikuo and Li, Xiang-Yang},
+  booktitle={34th USENIX Security Symposium (USENIX Security 25)},
+  pages={5931--5948},
+  year={2025}
 }
 ```
 
 ## License
 
-[Specify your license here]
-
-## Contact
-
-[Your contact information]
+This project is released under the MIT License.
 
 ## Acknowledgments
 
@@ -297,34 +216,3 @@ This project uses:
 - Montreal Forced Aligner for word-level alignment
 - Cryptodome for encryption
 - Various open-source Python libraries
-
-## Contributing
-
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes with proper documentation
-4. Submit a pull request
-
-## Troubleshooting
-
-### Common Issues
-
-**Import errors for pyworld/soundfile:**
-- These are optional for development
-- Install with: `pip install pyworld soundfile`
-
-**MFA not found (content privacy):**
-- Install Montreal Forced Aligner separately
-- See: https://montreal-forced-aligner.readthedocs.io/
-
-**Audio format issues:**
-- Install ffmpeg for audio conversion
-- Ensure pydub can access ffmpeg
-
-**Path errors:**
-- Update configuration paths in each script
-- Use absolute paths or ensure relative paths are correct
-- Create necessary directories before running
-
-For more issues, see module-specific README files.
