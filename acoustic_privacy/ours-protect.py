@@ -1,5 +1,5 @@
 """
-Speech Guard - Protection Module
+SpeechGuard - Protection Module
 Applies acoustic privacy protection to speech signals using frequency warping.
 """
 

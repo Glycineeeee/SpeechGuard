@@ -1,5 +1,5 @@
 """
-Speech Guard - Acoustic Privacy Protection Module
+SpeechGuard - Acoustic Privacy Module
 Common utility functions for speech signal processing and manipulation.
 """
 

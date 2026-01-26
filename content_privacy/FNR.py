@@ -1,5 +1,5 @@
 """
-Speech Guard - Content Privacy Module
+SpeechGuard - Content Privacy Module
 Step 5: Calculate False Negative Rate (FNR)
 
 Computes the False Negative Rate for the encryption system by comparing

@@ -1,5 +1,5 @@
 """
-Speech Guard - Content Privacy Module
+SpeechGuard - Content Privacy Module
 Step 3: Encrypt Sensitive Words in Audio
 
 Encrypts sensitive word segments in audio files using AES encryption.

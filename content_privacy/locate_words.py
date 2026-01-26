@@ -1,5 +1,5 @@
 """
-Speech Guard - Content Privacy Module
+SpeechGuard - Content Privacy Module
 Step 2: Locate Sensitive Words in Audio
 
 Locates sensitive words in audio files using Montreal Forced Aligner (MFA) output.

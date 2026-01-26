@@ -1,5 +1,5 @@
 """
-Speech Guard - Content Privacy Module
+SpeechGuard - Content Privacy Module
 Step 4: Count Sensitive Word Occurrences
 
 Counts how many times sensitive words appear in transcriptions.

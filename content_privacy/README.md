@@ -1,4 +1,4 @@
-# Speech Guard - Content Privacy Protection
+# SpeechGuard - Content Privacy Protection
 
 This module provides content privacy protection for speech by selectively encrypting sensitive words in audio files.
 

@@ -1,5 +1,5 @@
 """
-Speech Guard - Content Privacy Module
+SpeechGuard - Content Privacy Module
 Step 1: Select Sensitive Words
 
 Randomly selects sensitive words from each speaker's transcriptions.

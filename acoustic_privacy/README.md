@@ -1,4 +1,4 @@
-# Speech Guard - Acoustic Privacy Protection
+# SpeechGuard - Acoustic Privacy Protection
 
 This module provides acoustic privacy protection for speech signals using frequency warping techniques.
 

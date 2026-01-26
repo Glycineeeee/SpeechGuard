@@ -1,5 +1,5 @@
 """
-Speech Guard - Recovery Module
+SpeechGuard - Recovery Module
 Recovers original speech from protected audio using stored parameters.
 """
 

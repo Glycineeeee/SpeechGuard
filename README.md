@@ -4,7 +4,7 @@ A comprehensive speech privacy protection system that provides both acoustic and
 
 ## Overview
 
-Speech Guard protects speech privacy through two complementary approaches:
+SpeechGuard protects speech privacy through two complementary approaches:
 
 1. **Acoustic Privacy**: Protects speaker identity through frequency warping transformations
 2. **Content Privacy**: Protects sensitive information by selectively encrypting specific words

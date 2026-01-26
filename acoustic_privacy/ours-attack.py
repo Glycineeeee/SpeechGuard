@@ -1,5 +1,5 @@
 """
-Speech Guard - Attack Module
+SpeechGuard - Attack Module
 Attempts to recover protected speech by applying inverse transformations.
 """
 
