@@ -1,0 +1,125 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Audio and Data Files
+*.wav
+*.flac
+*.mp3
+*.ogg
+*.m4a
+
+# But keep example files in samples directory
+!samples/*.wav
+!samples/*.mp3
+!samples/readme.txt
+
+# Generated/Output Files
+samples/transcriptions/
+samples/sensitive_words/
+samples/mfa_output/
+samples/word_positions/
+samples/original_audio/
+samples/encrypted_audio/
+samples/encryption_keys/
+samples/metrics/
+samples/original/
+samples/protected/
+samples/attack/
+samples/recovered/
+
+# CSV and text output files (except in samples)
+*.csv
+!samples/**/*.csv
+*.txt
+!samples/readme.txt
+!README.txt
+
+# Model and checkpoint files
+*.pt
+*.pth
+*.ckpt
+*.model
+*.pkl
+*.pickle
+
+# Logs
+*.log
+logs/
+results/
+
+# TextGrid files from MFA
+*.TextGrid
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Configuration files with sensitive data
+config.ini
+secrets.py
+*.key
+*.pem
+
+# Large datasets
+datasets/
+data/
+corpora/
+
+# Experiment results
+experiments/
+runs/
+outputs/
