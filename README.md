@@ -199,8 +199,9 @@ If you use this code in your research, please cite:
 @inproceedings{zhang2025speechguard,
   title={SpeechGuard: Recoverable and Customizable Speech Privacy Protection},
   author={Zhang, Jingmiao and Liu, Suyuan and Hou, Jiahui and Wang, Zhiqiang and Yu, Haikuo and Li, Xiang-Yang},
-  booktitle={34th USENIX Security Symposium (USENIX Security 2025)},
+  booktitle={34th {USENIX} Security Symposium, {USENIX} Security 2025, Seattle, WA, USA, August 13-15, 2025},
   pages={5931--5948},
+  publisher={{USENIX} Association},
   year={2025}
 }
 ```
